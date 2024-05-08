@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #0084fd;
+    --primary-color-light: #b5ddff;
+
+    --secondary-color: #9792e4;
+    --secondary-color-light: #ffffff;
+
+    --thirdary-color-dark: #000000;
+    --thirdary-color: #333333;
+    --thirdary-color-light: #667d90;
+
+    --fourthary-color: #fdc15f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: .7rem;
+}
+
+
+/*******
+        NAVBAR
+                *******/
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul{
+    display: none;
+}
+
+nav .logo img {
+    width: 3rem;
+}
+
+nav .container .row{
+    align-items: center;
+}
+
+nav .hamburger i{
+    font-size: 1.4rem;
+}
+
+.c-set-nav{
+    background-color: #0084fd;
+    color: #ffffff;
+}
+
+
+/*******
+        Allineamento Testo
+                            ******/
+
+
+.txt-right{
+    text-align: right;
+}
+.txt-left{
+    text-align: left;
+}
+
+
+/*******
+        Utilities
+                    *******/
+
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row>*{
+    padding: .4rem;
+}
+
+
+/*******Colonne*******/
+
+.col-1_2{
+    flex-basis: calc(100% / 2);
+}
+
+/********
+        SERVICES
+                *********/
+#services{
+    margin-top: 3rem;
+}
