@@ -19,9 +19,58 @@
 }
 
 body{
-    font-size: .7rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: .6rem;
+    font-weight: 500;
 }
 
+h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+
+/*******
+        COLOR SET
+                    *******/
+.bg-1{
+    background-color:#b5ddff
+}
+
+.bg-2{
+    background-color: #9792e4;
+}
+
+.bg-3{
+    background-color: #ffffff;
+}
+
+.bg-4{
+    background-color: #0084fd;
+}
+
+.bg-5{
+    background-color: #9792e4;
+}
+
+.txt-1{
+    color: #0084fd;
+}
+
+.txt-2{
+    color: #667d90;
+}
+
+.txt-3{
+    color: #333333;
+}
+
+.txt-4{
+    color: #ffffff;
+}
 
 /*******
         NAVBAR
@@ -37,6 +86,16 @@ nav{
 
 nav ul{
     display: none;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: .5rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 nav .logo img {
@@ -45,22 +104,21 @@ nav .logo img {
 
 nav .container .row{
     align-items: center;
+    justify-content: space-between;
 }
 
 nav .hamburger i{
     font-size: 1.4rem;
 }
 
-.c-set-nav{
-    background-color: #0084fd;
-    color: #ffffff;
-}
-
 
 /*******
-        Allineamento Testo
-                            ******/
+        TESTO
+                ******/
 
+.icon-big{
+    font-size: 3rem;
+}
 
 .txt-right{
     text-align: right;
@@ -68,7 +126,13 @@ nav .hamburger i{
 .txt-left{
     text-align: left;
 }
+.txt-center{
+    text-align: center;
+}
 
+.txt-em{
+    font-style: italic;
+}
 
 /*******
         Utilities
@@ -76,9 +140,15 @@ nav .hamburger i{
 
 
 .container{
+    border: 1px solid black;
+    max-width: 920px;
     width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+section .row{
+    flex-direction: column;
 }
 
 .row{
@@ -88,6 +158,53 @@ nav .hamburger i{
 
 .row>*{
     padding: .4rem;
+}
+
+.card{
+    border-radius: 25px;
+    padding: 2rem;
+    width: 100%;
+}
+
+/*******Padding******/
+
+.pd-0{
+    padding: 0;
+}
+
+.pd-top-bot-1rem{
+    padding: 1rem 0;
+}
+
+.pd-top-bot-2rem{
+    padding: 2rem 0;
+}
+
+.pd-left-right-2rem{
+    padding: 0 2rem;
+}
+
+.pd-bot-1-5rem{
+    padding-bottom: 1.5rem;
+}
+
+/*******Button*******/
+
+.btn{
+    border-radius: 25px;
+    border: none;
+    padding: .5rem 2.5rem;
+}
+
+.btn-small{
+    padding: .5rem;
+}
+
+.btn-circle{
+    border-radius: 50%;
+    line-height: 2.5rem;
+    width: 2.5rem;
+    border: none;
 }
 
 
@@ -101,5 +218,23 @@ nav .hamburger i{
         SERVICES
                 *********/
 #services{
-    margin-top: 3rem;
+    margin-top: 4rem;
+}
+
+#services img{
+    margin-bottom: -2.3rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*******
+        PLANNING
+                *******/
+
+#planning img{
+    width: 85%;
+    object-fit: cover;
+}
+#planning .card{
+    padding: 1rem;
 }

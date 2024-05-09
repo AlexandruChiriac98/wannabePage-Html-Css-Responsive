@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FirstResponsive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/a19b158346.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style-media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!--Navbar-->
-    <nav class="c-set-nav">
+    <nav class="txt-4 bg-4">
         <div class="container">
             <div class="row">
                 <div class="col-1_2 col-lg-1_3">
@@ -17,6 +21,7 @@
                         <img src="img/logo.png" alt="">
                     </div>
                 </div>
+
                 <div class="col-1_2 col-lg-2_3">
                     <div class="menu txt-right">
                         <div class="hamburger">
@@ -27,7 +32,7 @@
                             <li><a href="#">Testimonials</a></li>
                             <li><a href="#">Features</a></li>
                             <li><a href="#">Aboust Us</a></li>
-                            <li><button class="btn">Get Started</button></li>
+                            <li><button class="btn btn-small txt-3">Get Started</button></li>
                         </ul>
                     </div>
                 </div>
@@ -36,20 +41,84 @@
     </nav>
 
     <main>
-        <section id="services">
+        <section id="services" class="pd-bot-1-5rem">
             <div class="container">
                 <div class="row">
-                    <div class="col-2_3"></div>
-                    <div class="col-1_3"></div>
-                    <div class="col-1_3"></div>
-                    <div class="col-1_3"></div>
-                    <div class="col-1_3"></div>
+                    <div class="col-lg-2_3">
+                        <div class="card bg-1">
+                            <div class="row">
+                                <div class="col-1_2 txt-left pd-0 pd-bot-1-5rem">
+                                    <h4 class="txt-1 pd-bot-1-5rem">Get a demo application</h4>
+                                    <p class="txt-2 pd-bot-1-5rem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis assumenda vitae accusantium nesciunt doloribus totam eaque exercitationem aliquam officia officiis ipsum quam esse tenetur, facere corrupti in consequatur? Nam, dolorem.</p>
+                                    <button class="btn bg-4 txt-4"><i class="fa-brands fa-apple"></i> App Store</button>
+                                </div>
+
+                                <div class="col-1_2 pd-0">
+                                    <img src="img/phone.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-1_3 col-md-1_2">
+                        <div class="card bg-1 txt-center pd-lg-bot-3-9rem">
+                            <i class="txt-1 icon-big pd-bot-1-5rem fa-solid fa-file-code"></i>
+                            <h4 class="txt-1 pd-bot-1-5rem">Clean Code</h4>
+                            <p class="txt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit architecto quis laboriosam sed similique inventore dicta incidunt rem consequatur accusamus accusantium dolores reiciendis doloremque nisi, totam ut praesentium. Quam, accusantium.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-1_3 col-md-1_2">
+                        <div class="card bg-1 txt-center">
+                            <i class="txt-1 icon-big pd-bot-1-5rem fa-solid fa-compass-drafting"></i>
+                            <h4 class="txt-1 pd-bot-1-5rem">Web Design</h4>
+                            <p class="txt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit architecto quis laboriosam sed similique inventore dicta incidunt rem consequatur accusamus accusantium dolores reiciendis doloremque nisi, totam ut praesentium. Quam, accusantium.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-1_3 col-md-1_2">
+                        <div class="card bg-1 txt-center">
+                            <i class="txt-1 icon-big pd-bot-1-5rem fa-solid fa-laptop-code"></i>
+                            <h4 class="txt-1 pd-bot-1-5rem">Development</h4>
+                            <p class="txt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit architecto quis laboriosam sed similique inventore dicta incidunt rem consequatur accusamus accusantium dolores reiciendis doloremque nisi, totam ut praesentium. Quam, accusantium.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-1_3 col-md-1_2">
+                        <div class="card bg-1 txt-center">
+                            <i class="txt-1 icon-big pd-bot-1-5rem fa-solid fa-volume-high"></i>
+                            <h4 class="txt-1 pd-bot-1-5rem">Branding</h4>
+                            <p class="txt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit architecto quis laboriosam sed similique inventore dicta incidunt rem consequatur accusamus accusantium dolores reiciendis doloremque nisi, totam ut praesentium. Quam, accusantium.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="planning" class="bg-5 pd-top-bot-2rem">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1_3 pd-left-right-2rem row">
+                        <div class="col-1_2 pd-bot-1-5rem">
+                            <img src="img/planning1.png" alt="">
+                        </div>
+                        <div class="col-1_2 pd-bot-1-5rem pd-lg-top-3rem">
+                            <h3 class="txt-4 pd-top-bot-1rem">Strategic Planning</h3>
+                            <p class="txt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi inventore accusantium porro, perspiciatis sit id, laboriosam praesentium cupiditate corrupti labore eos esse ad a odit, rem animi provident alias natus.</p>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-1_3 pd-lg-top-3rem pd-left-right-2rem">
+                        <div class="card bg-3 txt-3 txt-center">
+                            <img src="img/planning2.png" alt="">
+                            <h4 class="txt-3 pd-top-bot-1rem">App Development</h4>
+                            <p class="txt-3 txt-em pd-bot-1-5rem">Develop an on-demand app for your delivery business to reach your target customers without any interruption</p>
+                            <button class="btn-circle bg-2 txt-3"><i class="fa-solid fa-arrow-down-long"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section>
