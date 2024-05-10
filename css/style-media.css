@@ -18,6 +18,31 @@
     #planning .container .row{
         justify-content: center;
     }
+
+    /*******TESTIMONIAL******/
+
+    #testimonial .md-row{
+        display: flex;
+    }
+    #testimonial .card div{
+        align-items: start;
+    }
+
+    /********BENEFITS******/
+    
+    #benefits .col-md-1_2{
+        flex-basis: calc(100% / 2);
+    }
+
+    /*******ABOUT US******/
+
+    #about-us .col-md-1_3{
+        flex-basis: calc(100% / 3);
+    }
+    #about-us .col-md-2_3{
+        flex-basis: calc(100% / 3 * 2);
+    }
+
 }
 
 @media screen and (min-width:992px) {
@@ -64,6 +89,13 @@
     #planning .col-lg-1_3:last-child{
         align-self: end;
     }
+
+    /********BENEFITS******/
+    
+    #benefits .col-lg-1_3{
+        flex-basis: calc(100% / 3);
+    }
+
 }
 
 

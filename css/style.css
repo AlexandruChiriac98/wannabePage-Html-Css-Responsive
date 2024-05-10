@@ -24,12 +24,20 @@ body{
     font-weight: 500;
 }
 
+h2{
+    font-size: 1.8rem;
+}
+
 h3{
     font-size: 1.5rem;
 }
 
 h4{
     font-size: 1.3rem;
+}
+
+h5{
+    font-size: 1.1rem;
 }
 
 
@@ -70,6 +78,10 @@ h4{
 
 .txt-4{
     color: #ffffff;
+}
+
+.txt-5{
+    color: #9792e4;
 }
 
 /*******
@@ -140,7 +152,6 @@ nav .hamburger i{
 
 
 .container{
-    border: 1px solid black;
     max-width: 920px;
     width: 100%;
     margin: 0 auto;
@@ -166,10 +177,22 @@ section .row{
     width: 100%;
 }
 
+.img-circle{
+    width: 10rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 /*******Padding******/
 
 .pd-0{
     padding: 0;
+}
+
+.pd-left_5rem{
+    padding-left: .5rem;
 }
 
 .pd-top-bot-1rem{
@@ -237,4 +260,42 @@ section .row{
 }
 #planning .card{
     padding: 1rem;
+}
+
+/*******
+        TESTIMONIAL
+                    *******/
+
+#testimonial .card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+#testimonial .row .col {
+    padding-bottom: 1rem;
+}
+
+/****** 
+        BENEFITS
+                *******/
+
+#benefits .number{
+    font-size: 4rem;
+}
+
+/*******
+        ABOUT US 
+                *******/
+
+#about-us .card:first-child{
+    position: relative;
+}
+#about-us .card div i {
+    top: 1rem;
+    left: 9rem;
+    font-size: 5rem;
+    position: absolute;
 }
